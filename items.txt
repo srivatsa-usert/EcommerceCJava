@@ -1,0 +1,8 @@
+1	Laptop	ABC Electronics	1200.00
+2	Smartphone	XYZ Tech	800.00
+3	Headphones	Audio Dynamics	50.00
+4	Smartwatch	Tech Innovations	150.00
+5	Camera	Photo Pros	600.00
+6	Tablet	Mobile Solutions	350.00
+7	Monitor	Visual Displays	300.00
+8	Printer	PrintTech	200.00

@@ -1,0 +1,72 @@
+create structures for the order, items
+
+keep it menu-driven ( using cli to show the menu as options )
+
+E-commerce: with order, item, quantity, price
+orders: update, generate bills, price = sum of items and gst sum
+
+to get all the orders greater than 2000 ( for generating bills including the gst )
+items ordered by item price
+gst - keep constant 18%
+
+keep it repeatable, reusable and interoperable, create interface, modular
+use function  prototype
+
+------------------------------------------------------------------------------------
+
+date : 05-01-2024
+
+order
+        (item type) itemObj array
+        total price = sumation of quantity * getPrice(itemObj)
+        grand total = total price + gst
+        buyer name, date -- additional info
+
+        will use an extern variable storing the gst - 18% and getting it
+
+        orders.txt - Used to store orders 
+
+            orders.txt -
+                        item id<tab>quantity<CRLF>
+                        item id<tab>quantity<CRLF>
+                        #<CRLF> - (using # as order seeprator)
+
+                        ........
+                        item id<tab>quantity<CRLF>
+                        item id<tab>quantity<CRLF>
+                        #<CRLF>
+                        <CRLF>
+                        double return to represent EOF
+
+
+item -
+        item id,
+        item name,
+        company name, -- additional info
+        item price,
+
+        items.txt - this will keep the items list in a file (for now the available quantity is kept infinity)
+        --- (on next version can have two types of users - buyer and administrator to accomodate the available quantity etc...)
+
+            items.txt - 
+                        item id<tab>name<tab>company<tab>price<CRLF>
+                        item id<tab>name<tab>company<tab>price<CRLF>
+                        ...
+                                                              <CRLF>
+                        <CRLF>
+
+                        double return to represent EOF
+
+
+----------------------------------------------------------------------------------------
+
+date : 07-01-2024
+
+changing idea - kept both the structures for order and item in same file as Ecommerce header file
+
+
+
+
+
+
+
